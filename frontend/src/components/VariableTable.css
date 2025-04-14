@@ -1,0 +1,65 @@
+.variable-table-container {
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.empty-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: #999;
+  font-style: italic;
+}
+
+.variable-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.variable-table th,
+.variable-table td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.variable-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  color: #333;
+}
+
+.variable-table tr:last-child td {
+  border-bottom: none;
+}
+
+.variable-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.primitive-type {
+  background-color: #e6f7ff;
+}
+
+.reference-type {
+  background-color: #f6ffed;
+}
+
+.variable-value {
+  font-family: monospace;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.variable-value:hover {
+  white-space: normal;
+  word-break: break-all;
+}
